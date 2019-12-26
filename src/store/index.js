@@ -7,9 +7,9 @@ Vue.use(Vuex);
 
 const state = {
     user: {
-        msgCount: 23,
-        username: '用户名称',
-        menuId: '5,6,7'
+        msgCount: 0,
+        username: '用户',
+        menuId: '1,2,3'
     },
     app: {
         menuList: [],

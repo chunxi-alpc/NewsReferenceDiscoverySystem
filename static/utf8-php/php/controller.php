@@ -1,7 +1,8 @@
 <?php
-//header('Access-Control-Allow-Origin: *'); //设置http://www.baidu.com允许跨域访问
-//header('Access-Control-Allow-Headers: X-Requested-With,X_Requested_With'); //设置允许的跨域header
-date_default_timezone_set("Asia/chongqing");
+header('Access-Control-Allow-Origin: *'); //设置允许跨域访问
+header('Access-Control-Allow-Headers: X-Requested-With,Content-Type'); //设置允许的跨域header
+header('Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS');
+date_default_timezone_set("Asia/beijing");
 error_reporting(E_ERROR);
 header("Content-Type: text/html; charset=utf-8");
 

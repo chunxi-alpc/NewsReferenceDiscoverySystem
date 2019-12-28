@@ -1,9 +1,6 @@
 <?php
 /**
  * 获取已上传的文件列表
- * User: Jinqn
- * Date: 14-04-09
- * Time: 上午10:17
  */
 include "Uploader.class.php";
 

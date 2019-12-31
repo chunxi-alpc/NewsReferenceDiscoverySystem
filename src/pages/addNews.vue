@@ -5,17 +5,20 @@
         <Form :label-width="80" :model="formItem">
           <FormItem label="新闻链接">
             <Input v-model="formItem.link" placeholder="请输入新闻的链接" />
-            <Button type="primary" @click="submit">提交</Button>
           </FormItem>
           <FormItem label="新闻名称">
-            <Input v-model="formItem.title" placeholder />
+            <Input v-model="formItem.title" />
           </FormItem>
           <FormItem label="新闻内容">
             <Input v-model="formItem.content" placeholder type="textarea" :rows="10" />
           </FormItem>
-          <FormItem label="新闻来源">
-            <Input v-model="formItem.origin" placeholder type="textarea" />
+          <FormItem label="新闻主题">
+            <Input v-model="formItem.theme" />
           </FormItem>
+          <FormItem label="新闻来源">
+            <Input v-model="formItem.origin" />
+          </FormItem>
+          <Button type="primary" @click="submit">提交</Button>
         </Form>
       </Col>
     </Row>
@@ -31,6 +34,7 @@ export default {
         link: '',
         title: '',
         content: '',
+        theme: '',
         origin: '',
       },
       editor: null

@@ -15,16 +15,16 @@ export default {
           key: 'title'
         },
         {
-          title: '新闻分类',
-          key: 'id'
+          title: '新闻主题',
+          key: 'theme'
         },
         {
-          title: '新闻作者',
-          key: 'author'
+          title: '新闻来源',
+          key: 'origin'
         },
         {
-          title: '新闻简介',
-          key: 'digest'
+          title: '新闻内容',
+          key: 'content'
         },
       ],
       catData: [

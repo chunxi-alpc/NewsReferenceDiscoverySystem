@@ -1,0 +1,19 @@
+﻿<?php
+header('Access-Control-Allow-Origin: *'); //设置允许跨域访问
+header('Access-Control-Allow-Headers: X-Requested-With,Content-Type'); //设置允许的跨域header
+header('Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS');
+$dbms="mysql";
+$host='localhost';
+$dbName='test';
+$user='root';
+$pass='123456';
+$dsn="$dbms:host=$host;dbname=$dbName;charset=utf8";
+
+try{
+    $pdo = new PDO($dsn,$user,$pass);
+    print_r( "连接成功");
+    //foreach ($pdo->query('SELECT * from newscont') as $row){
+        //print_r($row); }
+}catch (PDOException $e){
+    die ("Error!: " . $e->getMessage() . "<br/>");
+}

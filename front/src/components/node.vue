@@ -69,7 +69,8 @@ export default {
   },
   methods: {
     async getList () {//列表
-      let da = await this.$http.get('/test/list?name=ka&sex=25');
+      let da = await this.$http.get('/test/list');
+      console.log(da);
       this.tableData = da.data.data;
     },
 

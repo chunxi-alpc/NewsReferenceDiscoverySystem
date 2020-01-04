@@ -58,7 +58,7 @@ router.post('/test/edit', async(ctx, next) => { //修改接口
 router.get('/test/list', async(ctx, next) => { //查询接口
     console.log('list', ctx.request.body);
     let da = await new Promise(function(resolve, reject) {
-        connection.query(`SELECT title,theme,Category from news`, (error, results, fields) => {
+        connection.query(`SELECT id,title,theme,Category from news`, (error, results, fields) => {
             if (error) throw error
             return resolve(results)
         });
